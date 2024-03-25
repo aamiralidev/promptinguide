@@ -1,0 +1,46 @@
+.hoverable-li {
+  cursor: pointer;
+}
+
+.nav-bar-item {
+  cursor: pointer;
+}
+
+.hoverable-li:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+.arrow-icon:hover {
+  background-color: rgb(243, 246, 246);
+}
+
+.hoverable-li.clicked {
+  color: #004ca3;
+  font-weight: bold;
+  background-color: #e0efff; /* Change background color when clicked */
+}
+
+.side-navigation-container {
+  position: relative;
+}
+
+.side-navigation-container::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 18px; /* Adjust as needed */
+  width: 1px;
+  height: 90%;
+  background-color: #ccc; /* Adjust line color as needed */
+  z-index: 1;
+}
+
+.vertical-line {
+  position: relative;
+  top: 0;
+  left: 1px; /* Adjust as needed */
+  width: 1px;
+  height: 100%;
+  background-color: #ccc; /* Adjust line color as needed */
+  z-index: 1;
+}
